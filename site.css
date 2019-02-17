@@ -26,16 +26,16 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'royalregular';
   background: white;
   overflow: hidden !important;
   color: black;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  height: 100%;
 }
 
 .msg {
