@@ -32,11 +32,12 @@
   <script type="text/javascript" src="assets/instafeed.js"></script>
 
   <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'user',
-        userId: 11123865674,
-        limit: 10,
-        clientId: 'a5d35edb217a4763b9e571a2796bc0eb'
+    const feed = new Instafeed({
+      target: 'instafeed',
+      get: 'user',
+      userId: 11123865674,
+      limit: 10,
+      clientId: 'a5d35edb217a4763b9e571a2796bc0eb'
     });
     feed.run();
 </script>
