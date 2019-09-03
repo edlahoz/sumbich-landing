@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45890651-5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -28,32 +28,62 @@
   
   <!-- Mail Chimp -->
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"b6760199bae493e878f83a850","lid":"3cc0556c4e","uniqueMethods":true}) })</script>
+
+  <script type="text/javascript" src="assets/instafeed.js"></script>
+
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: 11123865674,
+        limit: 10,
+        clientId: 'a5d35edb217a4763b9e571a2796bc0ebs'
+    });
+    feed.run();
+</script>
   
 </head>
 <body>
 
   <div class="content">
-    
-    <div class="box">
-      <!-- twitter widget -->
-      <h1 title="Sumb!ch"><img src="assets/SUMBICH_LOGO.png" alt="sumbich logo" class="logo"></h1>
-      
-      <h2 class="msg">Coming soon</h2>
-      
-      <!-- instagram widget -->
+
+    <h1 title="Sumb!ch"><img src="assets/SUMBICH_LOGO.png" alt="sumbich logo" class="logo"></h1>
+
+    <div id="instafeed"></div>
+
+    <h2 class="heading">Find Us</h2>
+
+    <div class="widgets">
       <a class="widget" href="https://www.instagram.com/hotsumbich/" target="_blank" title="Follow us on Instagram"><img src="assets/instagram-small.png" alt="instagram logo"></a>
-      
-      <!-- twitter widget -->
       <a class="widget" href="https://twitter.com/HotSUMBICH/" target="_blank" title="Follow us on Twitter"><img src="assets/twitter-small.png" alt="twitter logo"></a>
     </div>
-
-    <div class="box">
-      <footer>
-        <p>&copy;2019 SUMB!CH&trade;. All rights reserved.</p>
-      </footer>
-    </div>
     
-  </div>
+    <h2 class="heading">Get In Touch</h2>
 
+    <form 
+      method="POST" 
+      data-email="getburned@sumbich.net" 
+      action="https://script.google.com/macros/s/AKfycbzIb1ujnMEaEOJ0c2Bvhu7Hd0zy4wp8f-k4LeiOxA/exec"
+      autocomplete="off"
+    >
+      <fieldset>
+        <label for="name">Name:</label>
+        <input tabindex="1" id="name" name="name" required/>
+      </fieldset>
+      <fieldset>
+        <label for="email">Email:</label>
+        <input tabindex="3" id="email" name="email" type="email" value="" required/>
+      </fieldset>
+      <fieldset>
+        <label for="message">Message:</label>
+        <textarea tabindex="2" id="message" name="message" rows="10" required></textarea>
+      </fieldset>
+      <button type="submit" tabindex="4ß">Send</button>
+    </form>
+    
+    <footer>
+      <p>&copy;2019 SUMB!CH&trade;. All rights reserved.</p>
+    </footer>
+
+  </div>
 </body>
 </html>

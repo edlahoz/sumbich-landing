@@ -17,13 +17,14 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input, textarea, button {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+  letter-spacing: 1px;
 }
 
 html {
@@ -32,15 +33,15 @@ html {
 
 body {
   font-family: 'royalregular';
-  background: white;
+  background: #fcfcfc;
   overflow: hidden !important;
   color: black;
   height: 100%;
 }
 
-.msg {
-  font-size: 3em;
-  padding: 25px 0 15px 0;
+.heading {
+  font-size: 2rem;
+  padding: 40px 0 20px 0;
   letter-spacing: 2px;
 }
 
@@ -61,27 +62,73 @@ body {
   text-align: center;
 }
 
-.content > .box:last-child {
-  margin-top: 15%;
+.widgets {
+  display: flex;
+  align-items: center;
 }
 
-.content .box .widget img {
+.widget img {
   max-width: 40px;
 }
 
-.content .box .widget {
-  margin: 15px;
+.widget {
+  margin: 0 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form fieldset {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: flex;
+  margin-bottom: 10px;
 }
 
 footer {
-  font-size: .8em;
   font-family: monospace;
+  margin-top: 40px;
+}
+
+input, textarea {
+  padding: 10px;
+  min-width: 260px;
+  background: #D64022;
+  border-radius: 10px;
+  color: #fff;
+}
+
+input:focus, textarea:focus {
+  outline: 4px solid black;
+  border-radius: 0;
+}
+
+form button {
+  padding: 10px;
+  text-transform: uppercase;
+  background: transparent;
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid black;
+  width: fit-content;
+  display: flex;
+  align-self: center;
+}
+
+form button:focus, form button:hover {
+  outline: 0;
+  color: white;
+  border-color: #D64022;
+  background: #D64022;
 }
 
 @media(max-width: 740px) {
-  .msg {
-    font-size: 2em;
-  }
   .logo {
     max-width: 300px;
   }
