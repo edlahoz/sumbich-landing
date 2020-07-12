@@ -24,66 +24,13 @@
   <meta name="robots" content="index, follow">
   
   <link rel="shortcut icon" href="assets/favicon.png" type="image/vnd.microsoft.icon" />
-  <link rel="stylesheet" href="site.css?1" media="all" />
   
-  <script type="text/javascript" src="assets/instafeed.js"></script>
-
-  <script type="text/javascript">
-    const feed = new Instafeed({
-      target: 'instafeed',
-      get: 'user',
-      userId: 11123865674,
-      limit: 10,
-      clientId: 'a5d35edb217a4763b9e571a2796bc0eb',
-      accessToken: '11123865674.1677ed0.8672d67eb2e84abaa60f687026460a05',
-      resolution: 'low_resolution'
-    });
-    feed.run();
-</script>
+  <script>
+    window.location.href = 'https://www.kickstarter.com/projects/sumbich/sumbich-hot-sauce';
+  </script>
   
 </head>
 <body>
 
-  <div class="content">
-
-    <h1 title="Sumb!ch"><img src="assets/SUMBICH_LOGO.png" alt="sumbich logo" class="logo"></h1>
-
-    <h2 class="heading">Find Us</h2>
-
-    <div class="widgets">
-      <a class="widget" href="https://www.instagram.com/hotsumbich/" target="_blank" title="Follow us on Instagram"><img src="assets/instagram-small.png" alt="instagram logo"></a>
-      <a class="widget" href="https://twitter.com/HotSUMBICH/" target="_blank" title="Follow us on Twitter"><img src="assets/twitter-small.png" alt="twitter logo"></a>
-    </div>
-
-    <div id="instafeed"></div>
-    
-    <h2 class="heading">Get In Touch</h2>
-
-    <form 
-      method="POST" 
-      data-email="getburned@sumbich.net" 
-      action="https://script.google.com/macros/s/AKfycbzIb1ujnMEaEOJ0c2Bvhu7Hd0zy4wp8f-k4LeiOxA/exec"
-      autocomplete="off"
-    >
-      <fieldset>
-        <label for="name">Name:</label>
-        <input tabindex="1" id="name" name="name" required/>
-      </fieldset>
-      <fieldset>
-        <label for="email">Email:</label>
-        <input tabindex="3" id="email" name="email" type="email" value="" required/>
-      </fieldset>
-      <fieldset>
-        <label for="message">Message:</label>
-        <textarea tabindex="2" id="message" name="message" rows="10" required></textarea>
-      </fieldset>
-      <button type="submit" tabindex="4ß">Send</button>
-    </form>
-    
-    <footer>
-      <p>&copy;2020 SUMB!CH&trade;. All rights reserved.</p>
-    </footer>
-
-  </div>
 </body>
 </html>
